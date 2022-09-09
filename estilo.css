@@ -2,16 +2,22 @@
     display:block;
     margin:0 auto;
     padding:20px;
-    background-color: #dc4c46;
-    width:300px;
-    height:500px;
+    background-color: #08082b;
+    width:350px;
+    height:575px;
     border-radius: 25px;
 }
 
 .calculadora td button{
     display:block;
     width:70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: rgb(248, 242, 242);
+    border-radius: 10px;
+    padding: 15px 15px;
     height: 70px;
+    color: rgb(21, 7, 63);
     font-size:25px;
 }
 
