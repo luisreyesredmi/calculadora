@@ -18,9 +18,20 @@
     padding: 15px 15px;
     height: 70px;
     color: rgb(21, 7, 63);
+    text-decoration: none;
     font-size:25px;
 }
 
+.reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.igual{
+
+}
 #resultado{
     display:block;
     text-align:center;

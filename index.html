@@ -1,45 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>calculadora
-</title>
-<link type="text/css" href="estilo.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .fundo{
+            background-image: linear-gradient(45deg, black, crimson);
+            height: 100vh;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .calculadora{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.1);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .boton{
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            cursor: pointer;
+            margin: 3px;
+            background-color: rgb(31,31,31);
+            border-radius: 5px;
+            color: #fff;
+        }
+        .boton:hover{
+            background-color: black;
+        }
+        #resultado{
+            background-color: white;
+            width: 207px;
+            height: 30px;
+            margin: 5px;
+            text-align: right;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-
-    <table class="calculadora"> 
-    <tr>
-       <td colspan="4"><span id="resultado"></span></td>
-    </tr>
-    <tr>
-        <td><button id="siete">7</button></td>
-        <td><button id="ocho">8</button></td>
-        <td><button id="nueve">9</button></td>
-        <td><button id="delete">DEL</button></td>
-    </tr>
-    <tr>
-        <td><button id="cuatro">4</button></td>
-        <td><button id="cinco">5</button></td>
-        <td><button id="seis">6</button></td>
-        <td><button id="mas">+</button></td> 
-    </tr>
-    <tr>
-        <td><button id="uno">1</button></td>
-        <td><button id="dos">2</button></td>
-        <td><button id="tres">3</button></td>
-        <td><button id="resta">-</button></td>
-    </tr>
-    <tr>
-        <td><button id="punto">.</button></td>
-        <td><button id="cero">0</button></td>
-        <td><button id="division">/</button></td>
-        <td><button id="multiplicacion">*</button></td>
-    </tr>
-    <tr>
-        <td><button id="reset">RESET</button></td>
-        <td><button id="igual">=</button></td>
-    </tr>
-    </table>
-      
+    <div class="fundo">
+        <h1> luisreyesredmi</h1>
+        <div class="calculadora">
+            <h1>calculadora</h1>
+            <p id="resultado">fdgdf</p>
+            <table>
+                <tr>
+                    <td><button class="boton">7</button></td>
+                    <td><button class="boton">8</button></td>
+                    <td><button class="boton">9</button></td>
+                    <td><button class="boton">DEL</button></td>
+                </tr>
+                <tr>
+                    <td><button class="boton">4</button></td>
+                    <td><button class="boton">5</button></td>
+                    <td><button class="boton">6</button></td>
+                    <td><button class="boton">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="boton">1</button></td>
+                    <td><button class="boton">2</button></td>
+                    <td><button class="boton">3</button></td>
+                    <td><button class="boton">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="boton">.</button></td>
+                    <td><button class="boton">0</button></td>
+                    <td><button class="boton">/</button></td>
+                    <td><button class="boton">*</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="boton" style="width: 106px">RESET</button></td>
+                    <td colspan="2"><button class="boton" style="width: 106px">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
 </body>
 </html>
