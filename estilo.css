@@ -1,46 +1,67 @@
-.calculadora{
-    display:block;
-    margin:0 auto;
-    padding:20px;
-    background-color: #08082b;
-    width:350px;
-    height:575px;
-    border-radius: 25px;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.calculadora td button{
-    display:block;
-    width:70px;
+.fondo{
+    background-color: #394764;
+    height: 100vh;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    background-color: rgb(248, 242, 242);
-    border-radius: 10px;
-    padding: 15px 15px;
-    height: 70px;
-    color: rgb(21, 7, 63);
-    text-decoration: none;
-    font-size:25px;
 }
-
-.reset{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
+.calculadora{
+    position: absolute;
+    background-color: #232c43;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    padding: 15px;
 }
-
-.igual{
-
+.boton{
+    width: 70px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    color: #424757;
+    border-radius: 8px;
+    margin: 5px;
+}
+.botonc{
+    background-color: #627198;
+    color: #f6ffff;
+    width: 70px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+}
+.botonig{
+    background-color: #d13f30;
+    color: #f6ffff;
+    width: 70px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+}
+.boton:hover{
+    filter: brightness(0.85);
+}
+.botonc:hover{
+    filter: brightness(0.85);
+}
+.botonig:hover{
+    filter: brightness(0.85);
 }
 #resultado{
-    display:block;
-    text-align:center;
-    font-size:40px;
-    margin-bottom: 50px;
-    width: 300px;
-    height: 100px;
-    line-height: 100px;
-    background-color: #fff;
-    border-radius: 25px;
-    overflow-y: scroll;
+    background-color: #182033;
+    width: 335px;
+    height: 55px;
+    border-radius: 8px;
 }
