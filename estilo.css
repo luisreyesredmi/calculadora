@@ -27,6 +27,8 @@
     color: #424757;
     border-radius: 8px;
     margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-weight: bold;
 }
 .botonc{
     background-color: #627198;
@@ -38,6 +40,8 @@
     cursor: pointer;
     border: none;
     margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-weight: bold;
 }
 .botonig{
     background-color: #d13f30;
@@ -49,6 +53,8 @@
     cursor: pointer;
     border: none;
     margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-weight: bold;
 }
 .boton:hover{
     filter: brightness(0.85);
