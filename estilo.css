@@ -70,4 +70,9 @@
     width: 335px;
     height: 55px;
     border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f6fdff;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: right;
 }
