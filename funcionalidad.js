@@ -6,7 +6,7 @@ function init() {
     //variables
     var resultado = document.getElementById("resultado");
     var reset = document.getElementById('reset');
-    var borrar = document.getElementById('borrar');
+    var back = document.getElementById('DEL');
     var suma = document.getElementById('suma');
     var resta = document.getElementById('resta');
     var multiplcacion = document.getElementById('multiplicacion');
@@ -63,10 +63,6 @@ function init() {
         resetear();
     }
 
-    borrar.onclick = function (e) {
-        borrar()
-    }
-
     suma.onclick = function (e) {
         operandoa = resultado.textContent;
         operacion = "+";
@@ -91,7 +87,9 @@ function init() {
         operandob = resultado.textContent;
         resolver();
     }
-
+    DEL.onclick = function (e) {
+        remover();
+    }
     function limpiar() {
         resultado.textContent = "";
     }
@@ -101,6 +99,10 @@ function init() {
         operandoa = 0;
         operandob = 0;
         operacion = "";
+    }
+
+    function remover() {
+        
     }
 
     function resolver() {
@@ -124,5 +126,4 @@ function init() {
         }
         resetear();
         resultado.textContent = res;
-    }
-}
+    }}
