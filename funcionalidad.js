@@ -102,8 +102,13 @@ function init() {
     }
 
     function remover() {
-        
+        if (resultado.innerHTML.length > 0) {
+            resultado.innerHTML = resultado.innerHTML.substring(0, resultado.innerHTML.length - 1);
+        } else {
+            resetear()
+        }
     }
+
 
     function resolver() {
         var res = 0;
@@ -126,4 +131,29 @@ function init() {
         }
         resetear();
         resultado.textContent = res;
-    }}
+    }
+    var two = document.getElementById('two');
+    two.addEventListener('click', function () {
+        var body = document.querySelector('body');
+        var toggle = document.getElementById('circle');
+        body.classList.add('active1');
+        body.classList.remove('active2');
+        toggle.style.left = '36%';
+    })
+    var one = document.getElementById('one');
+    one.addEventListener('click', function () {
+        var body = document.querySelector('body');
+        var toggle = document.getElementById('circle');
+        body.classList.remove('active1');
+        body.classList.remove('active2');
+        toggle.style.left = '0';
+    })
+    var three = document.getElementById('three');
+    three.addEventListener('click', function () {
+        var body = document.querySelector('body');
+        var toggle = document.getElementById('circle');
+        body.classList.add('active2');
+        body.classList.remove('active1');
+        toggle.style.left = '65%';
+    })
+}
