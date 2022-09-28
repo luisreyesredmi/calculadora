@@ -138,7 +138,6 @@ function init() {
         var toggle = document.getElementById('circle');
         body.classList.add('active1');
         body.classList.remove('active2');
-        toggle.style.left = '36%';
     })
     var one = document.getElementById('one');
     one.addEventListener('click', function () {
@@ -146,7 +145,6 @@ function init() {
         var toggle = document.getElementById('circle');
         body.classList.remove('active1');
         body.classList.remove('active2');
-        toggle.style.left = '0';
     })
     var three = document.getElementById('three');
     three.addEventListener('click', function () {
@@ -154,6 +152,5 @@ function init() {
         var toggle = document.getElementById('circle');
         body.classList.add('active2');
         body.classList.remove('active1');
-        toggle.style.left = '65%';
     })
 }
