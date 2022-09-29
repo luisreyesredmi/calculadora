@@ -1,27 +1,62 @@
-*{
-    padding: 0;  
+* {
+    padding: 0;
     margin: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
     font-weight: 900;
     align-items: flex-start;
 }
-.fondo{
+
+body {
+
     background-color: #394764;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body.active1{
+
+    background-color: #460000;
+}
+
+body.active2{
+
+    background-color: #4b0023;
+}
+
+.fondo {
+    background-color: #668cc4;
     height: 100vh;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+
 }
-.calculadora{
+
+.calculadora {
     position: absolute;
     background-color: #394764;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 8px;
     padding: 15px;
 }
-.boton{
+
+body.active1 .calculadora{
+    background-color: #3b0101;
+}
+
+body.active2 .calculadora{
+    background-color: #350029;
+}
+
+body.active1 table {
+    background-color: #1b0000;
+}
+
+.boton {
     width: 70px;
     height: 50px;
     font-size: 25px;
@@ -34,7 +69,19 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     font-weight: bold;
 }
-.botonc{
+
+body.active1 button{  
+    box-shadow: 0px 3px 0px 0px hsl(0, 100%, 24%);
+    background-color: hsl(0, 100%, 34%);  
+    color: #f5fcff;
+}  
+body.active2 button{  
+    box-shadow: 0px 3px 0px 0px hsl(268, 100%, 8%);  
+    background-color: hsl(290, 100%, 15%);  
+    color: #f5fcff;  
+}
+
+.botonc {
     background-color: #627198;
     color: #f6ffff;
     width: 70px;
@@ -47,7 +94,18 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     font-weight: bold;
 }
-.botonig{
+
+body.active1 .botonc{
+    background-color: #220000;
+    box-shadow: 0px 3px 0px 0px #3b0101
+}
+
+body.active2 .botonc{
+    background-color: #1c0122;
+    box-shadow: 0px 3px 0px 0px #29012b
+}
+
+.botonig {
     background-color: #d13f30;
     color: #f6ffff;
     width: 70px;
@@ -60,16 +118,30 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     font-weight: bold;
 }
-.boton:hover{
+
+body.active1 .botonig {
+    background-color: #ca6147;
+    box-shadow: 0px 3px 0px 0px #6e3c03
+}
+
+body.active2 .botonig {
+    background-color: #a803ad;
+    box-shadow: 0px 3px 0px 0px #66097a
+}
+
+.boton:hover {
     filter: brightness(0.85);
 }
-.botonc:hover{
+
+.botonc:hover {
     filter: brightness(0.85);
 }
-.botonig:hover{
+
+.botonig:hover {
     filter: brightness(0.85);
 }
-#resultado{
+
+#resultado {
     background-color: #182033;
     width: 350px;
     height: 55px;
@@ -82,35 +154,60 @@
     margin: 0px;
     padding: 0px 10px;
 }
-table{
-    display: flex;  
+
+body.active1 #resultado {
+    background-color: #160000;
+}
+
+body.active2 #resultado {
+    background-color: #2e142c;
+}
+
+table {
+    display: flex;
     width: 350px;
     height: 330px;
-    flex-flow: wrap;  
-    background-color: hsl(224, 36%, 15%);  
-    padding: 11px 4px;  
-    margin: 8px 0;  
+    flex-flow: wrap;
+    background-color: hsl(224, 36%, 15%);
+    padding: 11px 4px;
+    margin: 8px 0;
     border-radius: 7px;
     align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
+
+body.active1 table {
+    background-color: #1b0000;
+}
+
+body.active2 table {
+    background-color: #1b0716;
+}
+
 .select-theme {
     display: flex;
     justify-content: flex-end;
     gap: 6px;
 }
-p{
+
+p {
     margin: 0 4px;
     color: #d7e6fb;
     cursor: pointer;
 }
-.control{
+
+.control {
     display: flex;
     justify-content: flex-end;
 }
-h3{
+
+h3 {
     position: absolute;
     top: 25px;
+    color: #fff;
 }
-p#one{
+
+p#one {
     margin-bottom: 1px;
 }
